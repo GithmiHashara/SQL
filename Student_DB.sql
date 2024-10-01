@@ -17,3 +17,11 @@ Select Student_ID , (Math + English) as Totals
 from Student_Marks;
 
 select * from TotalOfMaths_English;
+
+use student_db;
+
+create temporary table TotalofSciencenEnglish 
+Select student_ID, (Science+English) AS TotalSnE
+from Student_marks;
+
+select * from TotalofSciencenEnglish;
