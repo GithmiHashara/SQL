@@ -1,4 +1,4 @@
-CREATE DEFINER=`root`@`localhost` FUNCTION `InsertStudentMarks`(sID varchar(10), m int, s int, e int ) RETURNS varchar(50) CHARSET utf8mb4
+CREATE DEFINER=`root`@`localhost` FUNCTION `InsertStudentMarks`(sID varchar(10), ma int, s int, e int ) RETURNS varchar(50) CHARSET utf8mb4
     DETERMINISTIC
 BEGIN
  insert into Student_Marks (Student_ID, Math, Science, English)
