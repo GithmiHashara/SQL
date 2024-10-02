@@ -2,5 +2,5 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `TotalNoOfStudentsBySubject`(Subject
 BEGIN
   select COUNT(*) As TotalStudents 
   from students
-  where Subject=SubjectName;
+  where Subject=SubjectName; //pass the parameter
 END
