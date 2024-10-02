@@ -1,2 +1,2 @@
 use student_db;
- call TotalNoOfStudentsBySubject('DBMS')
+ call TotalNoOfStudentsBySubject('DBMS');
