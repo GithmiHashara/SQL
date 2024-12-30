@@ -48,5 +48,30 @@ on t.TID = r.TID ;
 
 select * from INFO;
 
+create view NEWINFO as
+select 
+TID ,
+name ,
+Destination 
+from INFO;
+
+select * from NEWINFO;
+
+create view Prices as
+select 
+Name as Train_name ,
+TID,
+Amount as Old_Amount ,
+(Amount + (Amount*10/100) ) as New_Amount 
+from INFO;
+
+select * from Prices;
+
+SELECT TABLE_NAME 
+FROM INFORMATION_SCHEMA.VIEWS
+WHERE TABLE_SCHEMA = 'Trains';
+
+
+
 
 
