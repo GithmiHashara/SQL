@@ -1,5 +1,9 @@
+DELIMITER $$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `GetFirstStudent`()
 BEGIN
-select * from Student_marks limit 2;
+    SELECT * FROM Student_marks LIMIT 1;
+END $$
 
-END
+DELIMITER ;
+CALL GetFirstStudent();
